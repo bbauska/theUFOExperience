@@ -1,4 +1,4 @@
-# theUFOExperience
+# the UFO Experience
 From the UFO Experience by J Allen Hynek.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
