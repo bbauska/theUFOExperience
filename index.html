@@ -43,34 +43,95 @@
   <meta name="theme-color" content="#ffffff">
 
   <title>UFO Experience</title>
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ script function: scrollFunction() ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ script function: scrollFunction() ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <script>
-  <!-- get the button -->
-  var mybutton = document.getElementById("myBtn");
-
-  <!-- when the user scrolls down 10px from the top of the document, show the button -->
-  window.onscroll = function() {scrollFunction()};
-
-  function scrollFunction() {
-    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
+    <!-- get the button -->
+    var mybutton = document.getElementById("myBtn");
+    <!-- when the user scrolls down 10px from the top of the document, show the "Top" button -->
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
     }
-  }
-  <!-- when the user clicks on the button, scroll to the top of the document. 0,0 or -->
-  <!-- to table of contents (approx ###), if applicable was; 315 -->
-  // when the user clicks on the button, scroll to the table of contents near top of document.
-  function topFunction() {
-    document.getElementById('ch1').scrollIntoView();
-  }
-</script>
+    // when the user clicks on the button, scroll to the table of contents near top of document.
+    function topFunction() {
+      document.getElementById('table-of-contents').scrollIntoView();
+    }
+  </script>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <header class="masthead">
+    <a id="branding" href="https://UFO-Exp.bauska.org">
+      <h1>the UFO Experience</h1>
+      <h2>by J. Allen Hynek, PhD Astrophysics</h2>
+    </a>
+  </header>
+  <nav class="nav-trigger">
+    <ul>
+      <li>
+        <a class="menu-open" href="#">
+          <i class="zmdi zmdi-view-list"></i>
+        </a>
+        <a class="menu-close" href="#">
+          <i class="zmdi zmdi-close"></i>
+          </a>
+      </li>
+    </ul>
+  </nav>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <aside id="main-menu">
+    <h3 class="menu-heading" id="table-of-contents">Chapter List</h3>
+    <ul>
+      <li> <a href="#chapter-00">0. Preface</a></li>
+      <li> <a href="#chapter-01">1. Acknowledgments</a></li>
+      <li> <a href="#chapter-02">2. Prologue</a></li>
+      <li> <a href="#chapter-03">3. PART 1: THE UFO PHENOMENON</a></li>
+      <li> <a href="#chapter-04">4. Introduction: An Innocent in UFO Land</a></li>
+      <li> <a href="#chapter-05">5. The Laughter of Science</a></li>
+      <li> <a href="#chapter-06">6. The UFO Experienced</a></li>
+      <li> <a href="#chapter-07">7. The UFO Reported</a></li>
+      <li> <a href="#chapter-08">8. On the Strangeness of UFO Reports</a></li>
+      <li> <a href="#chapter-09">9. PART 2: THE DATA AND THE PROBLEM</a></li>
+      <li> <a href="#chapter-10">10. Introduction: The Prototypes</a></li>
+      <li> <a href="#chapter-11">11. Nocturnal Lights</a></li>
+      <li> <a href="#chapter-12">12. UFOs Seen in the Daytime - Daylight Discs</a></li>
+      <li> <a href="#chapter-13">13. Radar-Visual UFO Reports</a></li>
+      <li> <a href="#chapter-14">14. Close Encounters of the First Kind</a></li>
+      <li> <a href="#chapter-15">15. Close Encounters of the Second Kind</a></li>
+      <li> <a href="#chapter-16">16. Close Encounters of the Third Kind</a></li>
+      <li> <a href="#chapter-17">17. PART III: WHERE DO WE GO FROM HERE?</a></li>
+      <li> <a href="#chapter-18">18. Introduction: The Invisible College</a></li>
+      <li> <a href="#chapter-19">19. The Air Force & the UFO - Pages from Blue Book</a></li>
+      <li> <a href="#chapter-20">20. Science is Not Always What Scientists Do</a></li>
+      <li> <a href="#chapter-21">21. The Case Before Us</a></li>
+      <li> <a href="#chapter-22">22. Epilogue: Beyond the Blue Book Horizon</a></li>
+      <li> <a href="#chapter-23">23. Appendix 1: Descriptions of Sightings Discussed in Text</a></li>
+      <li> <a href="#chapter-24">24. Appendix 2: Analysis of the Papua-Father Gill Case by Donald H. Menzel</a></li>
+      <li> <a href="#chapter-25">25. Appendix 3: Letter of Resignation from May Louise Armstrong to Doctor Edward Condon</a></li>
+      <li> <a href="#chapter-26">26. Appendix 4: Letter from J. Allen Hynek to Colonel Raymond S. Sleeper</a></li>
+    </ul>
+  </aside>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <section class="intro"></section>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 00. Foreward ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <section class="chapter" id="chapter-00">
+    <header class="chapter-masthead">
+      <h3 class="chapter-heading">Chapter 00</h3>
+      <h4 class="chapter-sub">Foreword</h4>
+    </header>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <article>
+      <p><h2 id="ch00">00. Foreword </h2>
+      <p></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1 align="center" id="ch1">The UFO Experience</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1016,26 +1077,26 @@ Department of Transport, and military intelligence.</p>
             <td>1967</td>
             <td>Manitoba</td>
             <td>Burns, physical evidence, official reports</td>
-		</tr>
+        </tr>
         <tr>
             <td>Shag Harbour</td>
             <td>1967</td>
             <td>Nova Scotia</td>
             <td>Water crash, sonar contact, RCMP involved</td>
-		</tr>
+        </tr>
         <tr>
             <td>North BAy Radar Case</td>
             <td>1951</td>
             <td>Ontario</td>
             <td>Radar and pilot confirmation</td>
-		</tr>
+        </tr>
         <tr>
             <td>Manitoba Wave</td>
             <td>1975-1978</td>
             <td>Carmna, MB</td>
             <td>Mass sightings of flying lights</td>
-		</tr>
-	</table>
+        </tr>
+    </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>🛸 Cultural Impact</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
